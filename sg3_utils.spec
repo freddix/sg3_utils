@@ -1,11 +1,11 @@
 Summary:	Utilities and test programs for the Linux sg version 3 device driver
 Name:		sg3_utils
-Version:	1.33
+Version:	1.36
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tgz
-# Source0-md5:	261e39f7161337330ba6bd57999be801
+# Source0-md5:	a3339169d61ac90e3d539f906e67a2b8
 URL:		http://sg.danny.cz/sg/
 Requires:	%{name} = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING COVERAGE CREDITS ChangeLog README README.sg_start
-%attr(755,root,root) %{_bindir}/sg*
+%attr(755,root,root) %{_bindir}/s*
 %{_mandir}/man8/s*.8*
 
 %files libs
